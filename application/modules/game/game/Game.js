@@ -39,7 +39,6 @@ class Game {
     
     leaveGame(token) {
         if (token in this.gamers) {
-            //this.gamer[token].setSecondTime();
             const time =  this.gamers[token].getTime();
             delete this.gamers[token];
             return {result: true, data: time};
